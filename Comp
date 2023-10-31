@@ -1,0 +1,25 @@
+class ComplexNo (
+Ent real:
+Int-Imagtnary:
+puble ComplexNo(int real, int (magtnary) (
+this.real=real;
+this. imagtnary=tmagtnary;
+Pattern3_61,java
+Employee_61 java
+public void display) [
+systen.out.println（real+"+"+tnagtnaryt"u"）；
+public ComplexNo multiply(ComplexNo other) [
+Lat productreal-this.real*other real-this. imagnary+other. tmagtnary;
+Int productimaginary-this. real*other.Imaginary+thts. tmaginary*other.real;
+return new ComplexNo(productreal,product imaginary);
+elass ComplexNumber
+pubile
+statle vold matn(String args[]) f
+ComplexNo n1=new Complexo (1,2); complexNo n2=new ComplexNo(3,4);
+System.out-print("First complex no: ");
+na-dtsplay@）：
+System.out.print("Second complex no: "):
+n2. display:
+ComplexNo result=n1.multiply(n2);
+Systen.out.print("Product complex no: ");
+result.display):
