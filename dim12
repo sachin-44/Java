@@ -1,0 +1,33 @@
+interface Polygon {
+    double findArea(int dim1, int dim2);
+}
+
+class Rectangle implements Polygon {
+    @Override
+    public double findArea(int length, int width) {
+        return length * width;
+    }
+}
+
+class Triangle implements Polygon {
+    @Override
+    public double findArea(int base, int height) {
+        return 0.5 * base * height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle();
+        int rectLength = 4;
+        int rectWidth = 5;
+        double rectArea = rectangle.findArea(rectLength, rectWidth);
+        System.out.println("Area of Rectangle: " + rectArea);
+
+        Triangle triangle = new Triangle();
+        int triBase = 6;
+        int triHeight = 8;
+        double triArea = triangle.findArea(triBase, triHeight);
+        System.out.println("Area of Triangle: " + triArea);
+    }
+}
